@@ -1,11 +1,11 @@
 void Autonomo(){
 
-  Serial.println("Modo Autonomo");
+  Serial.println("Modo Autónomo");
   delay(3000);
   comando = (char)bluetooth.read();
   Serial.println(comando);
 
-  if (comando == 'A'){ // Orden para iniciar el modo Autonomo
+  if (comando == 'A'){ // Orden para iniciar el modo Autónomo
     
     do{
 
@@ -13,8 +13,8 @@ void Autonomo(){
       int distanceL =  0;
       delay(40); 
       
-      if(distance <= 40){               //Evaluamos si existe obtaculo dentro del rango del sensor ultrasonico
-        Serial.println("obtaculo");
+      if(distance <= 40){               //Evaluamos si existe obstáculo dentro del rango del sensor ultrasonico
+        Serial.println("obstáculo");
         moveStop();                     // Nos detenemos              
         delay(200);                   
         moveBackward();                 // Retrocedemos
@@ -39,14 +39,14 @@ void Autonomo(){
 
       }
       else{
-        Serial.println("sin obtaculo");
+        Serial.println("sin obstáculo");
         moveForward();                  // Nos movemos hacia Adelante       
       }
 
       distance = readPing();
       comando = (char)bluetooth.read();
 
-    }while(comando != 'P');   // Orden para detener el modo Autonomo
+    }while(comando != 'P');   // Orden para detener el modo Autónomo
     
     Serial.println("bucle terminado");
  }

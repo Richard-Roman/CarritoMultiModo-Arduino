@@ -5,7 +5,7 @@
 // Definimos los pines del sensor ultrasonico
 #define TRIG_PIN A0                 // TRIG en el pin A0
 #define ECHO_PIN A1                 // ECHO en el pin A1
-// Distancia maxima del sensor ultrasonico
+// Distancia máxima del sensor ultrasonico
 #define MAX_DISTANCE 200     
 
 // Instanciamos un objeto que nos permita controlar el sensor ultrasonico       
@@ -59,7 +59,7 @@ void setup() {
   // Esperamos 
   delay(2000);
 
-  // Leemos la distancia mediante el sesor ultrasonico
+  // Leemos la distancia mediante el sensor ultrasonico
   distance = readPing();
 
   // Esperamos
@@ -68,9 +68,9 @@ void setup() {
 
 void loop() {
 
-  if (bluetooth.available() > 0){  // Verficamos la conexión
+  if (bluetooth.available() > 0){  // Verificamos la conexión
 
-      Serial.println("Conectado --- Modo Autonomo: X  Modo Bluethooth: C  Modo Sigue Lineas: T"); 
+      Serial.println("Conectado --- Modo Autónomo: X  Modo Bluethooth: C  Modo Sigue Lineas: T"); 
       Modo = (char)bluetooth.read(); // Leemos datos recibidos por bluetooth
       
       if (Modo == 'C'){ // Modo Bluetooth
@@ -79,7 +79,7 @@ void loop() {
         delay(2000);
         BluethoothControl();
       } 
-      else if (Modo == 'X'){ // Modo Autonomo
+      else if (Modo == 'X'){ // Modo Autónomo
         delay(500);
         Modo = (char)bluetooth.read();
         delay(2000);
@@ -97,7 +97,7 @@ void loop() {
 
    }
    else{                  // Bluetooth sin conexión
-     Serial.println("Sin Conexion");
+     Serial.println("Sin Conexión");
    }
 
 }

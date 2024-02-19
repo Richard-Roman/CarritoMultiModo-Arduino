@@ -1,6 +1,6 @@
 void BluethoothControl(){
 
-  Serial.println("Modo Bluethoot");
+  Serial.println("Modo Bluethooth");
   delay(3000);
   comando = (char)bluetooth.read();
   Serial.println(comando);
@@ -21,7 +21,7 @@ void BluethoothControl(){
             moveForward();                   // Nos movemos hacia Adelante
           }
           else if(comando == 'B'){
-            moveBackward();                   // Nos movemos hacia Atras 
+            moveBackward();                   // Nos movemos hacia Atrás 
           }
           else if(comando == 'L'){
             turnLeft();                       // Giramos a la Izquierda 
@@ -35,7 +35,7 @@ void BluethoothControl(){
         
         }
         else{
-          Serial.println("Sin Mudificacion");
+          Serial.println("Sin Modificación");
         }
 
       respaldo = comando;          

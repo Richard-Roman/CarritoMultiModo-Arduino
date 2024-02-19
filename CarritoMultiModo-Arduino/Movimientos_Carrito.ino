@@ -1,5 +1,6 @@
 void moveStop() {                       // Detenemos el carrito
-
+  
+  Serial.println("Detenerse");
   digitalWrite(motor1Input1, LOW);
   digitalWrite(motor1Input2, LOW);
   digitalWrite(motor2Input1, LOW);
@@ -7,9 +8,9 @@ void moveStop() {                       // Detenemos el carrito
 
 } 
   
-void moveBackward() {                   // Movemos el carrito hacia atras
+void moveBackward() {                   // Movemos el carrito hacia atrás
 
-  Serial.println("Atras");
+  Serial.println("Atrás");
   digitalWrite(motor1Input1, HIGH);
   digitalWrite(motor1Input2, LOW);
   digitalWrite(motor2Input1, HIGH);

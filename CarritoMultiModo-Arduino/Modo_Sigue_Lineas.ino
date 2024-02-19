@@ -31,7 +31,7 @@ void seguidorLinea() {
         turnRight(); // Girar a la izquierda
       } 
       else if (RIGHT_SENSOR == 1 && LEFT_SENSOR == 1) {
-        Serial.print("parate perro");
+        Serial.print("Detenerse");
         Serial.println(LEFT_SENSOR);
         Serial.println(RIGHT_SENSOR);
         moveStop();  // Detenerse
