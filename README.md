@@ -33,7 +33,7 @@ Desarrollar este proyecto nos permite obtener experiencia práctica en programac
 
 > También se puede adquirir un kit en Aliexpress.
 
-![Imagen de referencia](image.png)
+![Imagen de referencia](https://raw.githubusercontent.com/Richard-Roman/CarritoMultiModo-Arduino/develop/Img/Kit.webp)
 
 > Escoger el que mejor les convenga.
 
@@ -71,8 +71,8 @@ Desarrollar este proyecto nos permite obtener experiencia práctica en programac
 6. Realizar pruebas del funcionamiento autónomo, control por Bluetooth y seguidor de lineas.
 7. Ajustar y corregir el código según sea necesario.
 8. Realizar la prueba final para asegurar el correcto funcionamiento del carrito Multi-Modo.
-![Carrito Multi-Modo](image-1.png)
-![Carrito Multi-Modo2](image-2.png)
+![Carrito Multi-Modo](Img/Imagen1.jpg)
+![Carrito Multi-Modo2](Img/Imagen2.jpg)
 
 > [!IMPORTANT]
 >
