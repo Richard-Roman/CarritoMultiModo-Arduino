@@ -1,4 +1,4 @@
-# Carrito Multi-Modo con Arduino
+# Carrito Tri-Modal con Arduino
 
 Se pretende desarrollar el código para un carrito tri-modal construido con Arduino, capaz de ser controlado por Bluetooth, operar de forma autónoma y seguir líneas.
 
@@ -70,7 +70,7 @@ Desarrollar este proyecto nos permite obtener experiencia práctica en programac
         - OUT del sensor derecho al pin A5
 6. Realizar pruebas del funcionamiento autónomo, control por Bluetooth y seguidor de lineas.
 7. Ajustar y corregir el código según sea necesario.
-8. Realizar la prueba final para asegurar el correcto funcionamiento del carrito Multi-Modo.
+8. Realizar la prueba final para asegurar el correcto funcionamiento del carrito Tri-Modal
 ![Carrito Multi-Modo](Img/Imagen1.jpg)
 ![Carrito Multi-Modo2](Img/Imagen2.jpg)
 
